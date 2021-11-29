@@ -1,0 +1,183 @@
+{
+    "defaultPage" : "index",
+    "menus" : 
+        {
+            "general": { 
+                "DOMId": "topMenu" 
+                ,"items" : [
+                    {"id" :"styles", "label":{"en":"Styles","el": "Style EL"}, "url" :"#p/styles"}
+                    ,{"id" :"components", "label":{"en":"Components","el":"Components"}, "url" :"#"}
+                    ,{"id" :"patterns", "label":{"en":"Patterns","el":"Patterns"}, "url" :"#"}
+                ]
+            }
+            ,"styles" : {
+                "DOMId": "sideMenu" 
+                ,"items" :[
+                    {"id" :"styles.colour", "label":{"en":"Colour","el":"Colour"}, "url" :"#p/styles.colour"}
+                    ,{"id" :"styles.page_templates", "label":{"en":"Page Template","el":"Page Template"}, "url" :"#p/styles.page_templates"}
+                    ,{"id" :"styles.grid", "label":{"en":"Grid System","el":"Grid System"}, "url" :"#p/styles.grid"}
+                    ,{"id" :"styles.layout", "label":{"en":"Layout","el":"Layout EL"}, "url" :"#p/styles.layout"}
+                    ,{"id" :"styles.typography", "label":{"en":"Typography","el":"Typography"}, "url" :"#p/styles.typography"}
+                ]
+            }
+        }
+    ,
+    "pages" : {
+        "index":{
+            "id":"index",
+            "menus" : ["general"],
+            "template" : "3_3",
+            "MDcontent" : [
+                {
+                    "DOMId" : "main",
+                    "MDFile" : {"en":"content/index-en.MD","el":"content/index-el.MD"}
+                }
+            ]
+        },
+        "styles":{
+            "id":"styles",
+            "menus" : ["general", "styles"],
+            "template" : "1_3_sidemenu",
+            "MDcontent" : [
+                {
+                    "DOMId" : "main",
+                    "MDFile" : {"en" : "content/styles-en.MD", "el": "content/styles-el.MD"}
+                }
+            ]
+        },
+        "styles.colour":{
+            "id":"styles.colour",
+            "menus" : ["general", "styles"],
+            "template" : "1_3_sidemenu",
+            "MDcontent" : [
+                {
+                    "DOMId" : "main",
+                    "MDFile" :{"en" : "content/styles.colour-en.MD", "el" : "content/styles.colour-en.MD"}
+                }
+            ]
+        },
+        "styles.page_templates":{
+            "id":"styles.page_templates",
+            "menus" : ["general", "styles"],
+            "template" : "1_3_sidemenu",
+            "MDcontent" : [
+                {
+                    "DOMId" : "main",
+                    "MDFile" :{"en" : "content/styles.page_templates-en.MD", "el" : "content/styles.page_templates-en.MD"}
+                }
+            ]
+        },
+        "styles.grid":{
+            "id":"styles.grid",
+            "menus" : ["general", "styles"],
+            "template" : "1_3_sidemenu",
+            "MDcontent" : [
+                {
+                    "DOMId" : "main",
+                    "MDFile" :{"en" : "content/styles.grid-en.MD", "el" : "content/styles.grid-en.MD"}
+                }
+            ]
+        },
+        "styles.layout":{
+            "id":"styles.layout",
+            "menus" : ["general", "styles"],
+            "template" : "1_3_sidemenu",
+            "MDcontent" : [
+                {
+                    "DOMId" : "main",
+                    "MDFile" :{"en" : "content/styles.layout-en.MD", "el" : "content/styles.layout-en.MD"}
+                }
+            ]
+        },
+        "styles.typography":{
+            "id":"styles.typography",
+            "menus" : ["general", "styles"],
+            "template" : "1_3_sidemenu",
+            "MDcontent" : [
+                {
+                    "DOMId" : "main",
+                    "MDFile" :{"en" : "content/styles.typography.MD", "el" : "content/styles.typography.MD"}
+                }
+            ]
+        },
+        "proto":{
+            "id":"proto",
+            "menus" : [],
+            "template" : "3_3",
+            "MDcontent" : [],
+            "DSFcomponents" : 
+                {
+                "DOMId": "components",
+                "components" : [
+                    {
+                        "type": "h1",
+                        "label": {"en":"Enter your details", "el":"Εισαγάγετε τα στοιχεία σας"},
+                        "id" : "header1"
+                    },
+                    {
+                        "type": "text",
+                        "required": false,
+                        "label": {"en":"ID Number", "el":"Αρ. Ταυτότητας"},
+                        "placeholder": "XXXXXX",
+                        "name": "id",
+                        "id" : "id",
+                        "maxlength": 10
+                    },
+                    {
+                        "type": "text",
+                        "required": false,
+                        "label": {"en":"Name", "el":"Όνομα"},
+                        "name": "name",
+                        "id" : "id"
+                    },
+                    {
+                        "type": "paragraphHTML",
+                        "label": {"en":"<br>", "el":"<br>"}
+                    },
+                    {
+                        "type": "button",
+                        "label":  {"en":"Next", "el":"Επόμενο"},
+                        "subtype": "button",
+                        "name": "next"
+                    }
+                ]
+            }   
+        },
+        "proto1":{
+            "id":"proto1",
+            "menus" : [],
+            "template" : "3_3",
+            "MDcontent" : [],
+            "DSFcomponents" : 
+                {
+                "DOMId": "components",
+                "components" : [
+                    {
+                        "type": "h1",
+                        "label": {"en":"Enter your children details", "el":"Εισαγάγετε τα στοιχεία των παιδιών σας"},
+                        "id" : "header1"
+                    },
+                    {
+                        "type": "text",
+                        "required": false,
+                        "label": {"en":"ID Number of child", "el":"Αρ. Ταυτότητας παιδιού"},
+                        "placeholder": "XXXXXX",
+                        "name": "id",
+                        "id" : "id",
+                        "maxlength": 10
+                    },
+                    {
+                        "type": "paragraphHTML",
+                        "label": {"en":"<br>", "el":"<br>"}
+                    },
+                    {
+                        "type": "button",
+                        "label":  {"en":"Next", "el":"Επόμενο"},
+                        "subtype": "button",
+                        "name": "next"
+                    }
+                ]
+            }   
+        }
+    } 
+}
