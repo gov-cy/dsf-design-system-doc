@@ -73,15 +73,15 @@ var appView = {
    * Render site stuff like menus header and footer
    **/
   renderSiteStuff : function(){
+      //render header footer
+      if (DSFTemplates.header) $('#headerContainer').html(DSFTemplates.header[localStorage.DDSlanguageCode]);
+      if (DSFTemplates.footer) $('#footerContainer').html(DSFTemplates.footer[localStorage.DDSlanguageCode]);
       //render template
       $('#mainContainer').html(DSFTemplates.templates[appModel.siteOptions.pages[appModel.currentPageId].template]);
       //render menus
       for (var i = 0; i < appModel.siteOptions.pages[appModel.currentPageId].menus.length; i++) {
         appView.showMenu(appModel.siteOptions.menus[appModel.siteOptions.pages[appModel.currentPageId].menus[i]]);
       }
-      //render header footer
-      if (DSFTemplates.header) $('#headerContainer').html(DSFTemplates.header[localStorage.DDSlanguageCode]);
-      if (DSFTemplates.footer) $('#footerContainer').html(DSFTemplates.footer[localStorage.DDSlanguageCode]);
   },
   /**
    * Clears the screen
@@ -172,7 +172,7 @@ var appView = {
       var mainNavItems ="";
       $.each( menuItems, function( index, value ){
           var classHTML = (value.id==appModel.currentPageId?'class="nav-link active" aria-current="page"':'class="nav-link"')
-          mainNavItems += '<a '+classHTML+' href="'+value.url+'">'+value.label[localStorage.DDSlanguageCode]+'</a></li>';
+          mainNavItems += '<li class="nav-item"><a '+classHTML+' href="'+value.url+'">'+value.label[localStorage.DDSlanguageCode]+'</a></li>';
           });
       $('#'+menuElementId).html(mainNavItems);
   }, 

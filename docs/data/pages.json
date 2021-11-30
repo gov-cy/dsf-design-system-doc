@@ -3,6 +3,14 @@
     "menus" : 
         {
             "general": { 
+                "DOMId": "headerNavBar" 
+                ,"items" : [
+                    {"id" :"styles", "label":{"en":"Styles","el": "Style EL"}, "url" :"#p/styles"}
+                    ,{"id" :"components", "label":{"en":"Components","el":"Components"}, "url" :"#"}
+                    ,{"id" :"patterns", "label":{"en":"Patterns","el":"Patterns"}, "url" :"#"}
+                ]
+            }
+            ,"generalTop": { 
                 "DOMId": "topMenu" 
                 ,"items" : [
                     {"id" :"styles", "label":{"en":"Styles","el": "Style EL"}, "url" :"#p/styles"}
@@ -25,7 +33,7 @@
     "pages" : {
         "index":{
             "id":"index",
-            "menus" : ["general"],
+            "menus" : ["general","generalTop"],
             "template" : "3_3",
             "MDcontent" : [
                 {
@@ -36,7 +44,7 @@
         },
         "styles":{
             "id":"styles",
-            "menus" : ["general", "styles"],
+            "menus" : ["general", "generalTop","styles"],
             "template" : "1_3_sidemenu",
             "MDcontent" : [
                 {
@@ -47,7 +55,7 @@
         },
         "styles.colour":{
             "id":"styles.colour",
-            "menus" : ["general", "styles"],
+            "menus" : ["general", "generalTop","styles"],
             "template" : "1_3_sidemenu",
             "MDcontent" : [
                 {
@@ -58,7 +66,7 @@
         },
         "styles.page_templates":{
             "id":"styles.page_templates",
-            "menus" : ["general", "styles"],
+            "menus" : ["general", "generalTop", "styles"],
             "template" : "1_3_sidemenu",
             "MDcontent" : [
                 {
@@ -69,7 +77,7 @@
         },
         "styles.grid":{
             "id":"styles.grid",
-            "menus" : ["general", "styles"],
+            "menus" : ["general", "generalTop","styles"],
             "template" : "1_3_sidemenu",
             "MDcontent" : [
                 {
@@ -80,7 +88,7 @@
         },
         "styles.layout":{
             "id":"styles.layout",
-            "menus" : ["general", "styles"],
+            "menus" : ["general", "generalTop","styles"],
             "template" : "1_3_sidemenu",
             "MDcontent" : [
                 {
@@ -91,7 +99,7 @@
         },
         "styles.typography":{
             "id":"styles.typography",
-            "menus" : ["general", "styles"],
+            "menus" : ["general",  "generalTop","styles"],
             "template" : "1_3_sidemenu",
             "MDcontent" : [
                 {
@@ -167,8 +175,17 @@
                         "maxlength": 10
                     },
                     {
-                        "type": "paragraphHTML",
-                        "label": {"en":"<br>", "el":"<br>"}
+                        "type": "table",
+                        "label":  {"en":"Table", "el":"Πίνακας"},
+                        "head" : ["#","Date","Data"],
+                        "data" : 
+                            [
+                                ["1","2021-12-01","Lorem ipsum dolor sit amet, consectetur adipiscing elit. "],
+                                ["2","2021-12-21","In hendrerit nisl quis facilisis dapibus. Fusce pulvinar metus in nunc placerat tincidunt. "],
+                                ["3","2021-12-31","Ut lacus diam, tempus molestie laoreet ut, lobortis vitae mi."]
+                            ]
+                        , 
+                        "name": "next"
                     },
                     {
                         "type": "button",
