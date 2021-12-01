@@ -34,7 +34,7 @@
         "index":{
             "id":"index",
             "menus" : ["general","generalTop"],
-            "template" : "3_3",
+            "layout" : "Max-width",
             "MDcontent" : [
                 {
                     "DOMId" : "main",
@@ -45,7 +45,7 @@
         "styles":{
             "id":"styles",
             "menus" : ["general", "generalTop","styles"],
-            "template" : "1_3_sidemenu",
+            "layout" : "One-third + Two-thirds + Sidemenu",
             "MDcontent" : [
                 {
                     "DOMId" : "main",
@@ -56,7 +56,7 @@
         "styles.colour":{
             "id":"styles.colour",
             "menus" : ["general", "generalTop","styles"],
-            "template" : "1_3_sidemenu",
+            "layout" : "One-third + Two-thirds + Sidemenu",
             "MDcontent" : [
                 {
                     "DOMId" : "main",
@@ -67,7 +67,7 @@
         "styles.page_templates":{
             "id":"styles.page_templates",
             "menus" : ["general", "generalTop", "styles"],
-            "template" : "1_3_sidemenu",
+            "layout" : "One-third + Two-thirds + Sidemenu",
             "MDcontent" : [
                 {
                     "DOMId" : "main",
@@ -78,7 +78,7 @@
         "styles.grid":{
             "id":"styles.grid",
             "menus" : ["general", "generalTop","styles"],
-            "template" : "1_3_sidemenu",
+            "layout" : "One-third + Two-thirds + Sidemenu",
             "MDcontent" : [
                 {
                     "DOMId" : "main",
@@ -89,7 +89,7 @@
         "styles.layout":{
             "id":"styles.layout",
             "menus" : ["general", "generalTop","styles"],
-            "template" : "1_3_sidemenu",
+            "layout" : "One-third + Two-thirds + Sidemenu",
             "MDcontent" : [
                 {
                     "DOMId" : "main",
@@ -100,7 +100,7 @@
         "styles.typography":{
             "id":"styles.typography",
             "menus" : ["general",  "generalTop","styles"],
-            "template" : "1_3_sidemenu",
+            "layout" : "One-third + Two-thirds + Sidemenu",
             "MDcontent" : [
                 {
                     "DOMId" : "main",
@@ -111,7 +111,7 @@
         "proto":{
             "id":"proto",
             "menus" : [],
-            "template" : "3_3",
+            "layout" : "Max-width",
             "MDcontent" : [],
             "DSFcomponents" : 
                 {
@@ -154,7 +154,7 @@
         "cheatsheet":{
             "id":"cheatsheet",
             "menus" : [],
-            "template" : "3_3",
+            "layout" : "Max-width",
             "MDcontent" : [],
             "DSFcomponents" : 
                 {

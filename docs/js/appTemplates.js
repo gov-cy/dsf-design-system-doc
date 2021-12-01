@@ -1,8 +1,8 @@
 DSFTemplates = 
 {
-    "templates": {
-        "3_3" : "<main id='main'></main><div id='components'></div>"
-        ,"1_3_sidemenu" : "<div class='row'><main class='col-md-9 order-md-last' id='main'></main>"
+    "layouts": {
+        "Max-width" : "<article id='main'></article><article id='components'></article>"
+        ,"One-third + Two-thirds + Sidemenu" : "<div class='row'><article class='col-md-9 order-md-last' id='main'></article>"
             +"<aside class='col-md-3 order-md-first'><nav class='nav flex-column' id='sideMenu'></nav></aside></div>"
     },
     "header" : {

@@ -76,8 +76,8 @@ var appView = {
       //render header footer
       if (DSFTemplates.header) $('#headerContainer').html(DSFTemplates.header[localStorage.DDSlanguageCode]);
       if (DSFTemplates.footer) $('#footerContainer').html(DSFTemplates.footer[localStorage.DDSlanguageCode]);
-      //render template
-      $('#mainContainer').html(DSFTemplates.templates[appModel.siteOptions.pages[appModel.currentPageId].template]);
+      //render layouts
+      $('#mainContainer').html(DSFTemplates.layouts[appModel.siteOptions.pages[appModel.currentPageId].layout]);
       //render menus
       for (var i = 0; i < appModel.siteOptions.pages[appModel.currentPageId].menus.length; i++) {
         appView.showMenu(appModel.siteOptions.menus[appModel.siteOptions.pages[appModel.currentPageId].menus[i]]);
