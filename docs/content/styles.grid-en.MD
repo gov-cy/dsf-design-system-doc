@@ -18,9 +18,9 @@ Sample HTML Code:
 <div class="example-box">
   <div class="container-md">
       <div class="row">
-          <div class="col-md-4 example-box-inner">1st Column</div>
-          <div class="col-md-4 example-box-inner">2nd Column</div>
-          <div class="col-md-4 example-box-inner">3rd Column</div>
+          <div class="col-md-4 example-box-outter"><div class="example-box-inner">1st Column</div></div>
+          <div class="col-md-4 example-box-outter"><div class="example-box-inner">2nd Column</div></div>
+          <div class="col-md-4 example-box-outter"><div class="example-box-inner">3rd Column</div></div>
       </div>
   </div>
 </div>

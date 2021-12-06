@@ -43,8 +43,8 @@ Sample HTML Code
 <div class="example-box">
   <div class="container-md">
     <div class="row">
-        <article class="col-md-9 order-md-last example-box-inner">&lt;article&gt;</article>
-        <aside class="col-md-3 order-md-first example-box-inner">&lt;aside&gt;</aside>
+        <article class="col-md-9 order-md-last"><div class="example-box-inner">&lt;article&gt;</div></article>
+        <aside class="col-md-3 order-md-first"><div class="example-box-inner">&lt;aside&gt;</div></aside>
     </div>
-</div>
+  </div>
 </div>

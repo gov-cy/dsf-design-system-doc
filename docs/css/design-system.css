@@ -16,6 +16,12 @@
     padding-top:10px; padding-bottom:10px ;
     background-color: #cfe2ff;
   }
+  .example-box-outter {
+    border: 1px solid black;
+    margin-top:10px; margin-bottom:10px ;
+    padding-top:10px; padding-bottom:10px ;
+    background-color: #e2e8e1;
+  }
   
   .w-100-px{
     width: 100px !important;

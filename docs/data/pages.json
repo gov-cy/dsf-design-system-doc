@@ -5,7 +5,8 @@
             "general": { 
                 "DOMId": "headerNavBar" 
                 ,"items" : [
-                    {"id" :"styles", "label":{"en":"Styles","el": "Style EL"}, "url" :"#p/styles"}
+                    {"id" :"getting_started", "label":{"en":"Getting started","el": "Getting started"}, "url" :"#p/getting_started"}
+                    ,{"id" :"styles", "label":{"en":"Styles","el": "Style EL"}, "url" :"#p/styles"}
                     ,{"id" :"components", "label":{"en":"Components","el":"Components"}, "url" :"#"}
                     ,{"id" :"patterns", "label":{"en":"Patterns","el":"Patterns"}, "url" :"#"}
                 ]
@@ -13,7 +14,8 @@
             ,"generalTop": { 
                 "DOMId": "topMenu" 
                 ,"items" : [
-                    {"id" :"styles", "label":{"en":"Styles","el": "Style EL"}, "url" :"#p/styles"}
+                    {"id" :"getting_started", "label":{"en":"Getting started","el": "Getting started"}, "url" :"#p/getting_started"}
+                    ,{"id" :"styles", "label":{"en":"Styles","el": "Style EL"}, "url" :"#p/styles"}
                     ,{"id" :"components", "label":{"en":"Components","el":"Components"}, "url" :"#"}
                     ,{"id" :"patterns", "label":{"en":"Patterns","el":"Patterns"}, "url" :"#"}
                 ]
@@ -39,6 +41,17 @@
                 {
                     "DOMId" : "main",
                     "MDFile" : {"en":"content/index-en.MD","el":"content/index-el.MD"}
+                }
+            ]
+        },
+        "getting_started":{
+            "id":"getting_started",
+            "menus" : ["general", "generalTop"],
+            "layout" : "Max-width",
+            "MDcontent" : [
+                {
+                    "DOMId" : "main",
+                    "MDFile" : {"en" : "content/getting_started-en.MD", "el": "content/getting_started-en.MD"}
                 }
             ]
         },
