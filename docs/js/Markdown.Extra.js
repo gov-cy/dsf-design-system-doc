@@ -157,7 +157,7 @@
     this.highlightJs = false;
 
     // Table options
-    this.tableClass = '';
+    this.tableClass = 'table';
 
     this.tabWidth = 4;
   };
