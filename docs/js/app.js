@@ -9,7 +9,7 @@
       appModel.siteOptions = data;
       //language code
       if ((!localStorage.DDSlanguageCode) || (localStorage.DDSlanguageCode == 'undefined')) {
-          localStorage.DDSlanguageCode = "el";
+          localStorage.DDSlanguageCode = "en";
       }
       //initialize router
       appRouter.init();    
@@ -115,25 +115,6 @@ var appView = {
         appView.renderMarkDownContent(appModel.siteOptions.pages[pageId].MDcontent[i].MDFile[localStorage.DDSlanguageCode], 
             appModel.siteOptions.pages[pageId].MDcontent[i].DOMId)
       }
-
-      //------ DSF Components START------------------
-      //Render components
-      if (appModel.siteOptions.pages[pageId].DSFcomponents) {
-        //for all components
-        var DSFComponents = "";
-        for (var i = 0; i < appModel.siteOptions.pages[pageId].DSFcomponents.components.length; i++) {
-            //change label language
-            appModel.siteOptions.pages[pageId].DSFcomponents.components[i].langLabel = 
-                appModel.siteOptions.pages[pageId].DSFcomponents.components[i].label[localStorage.DDSlanguageCode];
-            //render using mustache
-            DSFComponents += Mustache.render
-            (DSFTemplates.componentTemplates[appModel.siteOptions.pages[pageId].DSFcomponents.components[i].type]
-                , appModel.siteOptions.pages[pageId].DSFcomponents.components[i])
-        }
-        //render on page
-        $("#"+appModel.siteOptions.pages[pageId].DSFcomponents.DOMId).html(DSFComponents);
-      }
-      //------ DSF Components END------------------
       
       //highlight hack to display html highlighter
       document.querySelectorAll("code").forEach(function(element) {

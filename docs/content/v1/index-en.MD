@@ -2,7 +2,6 @@
 
 Design your services using GOV.CY styles, components and patterns.
 
-
 Use this design system to make your service consistent with GOV.CY. Avoid repeating work that’s already been done.
 
 <div class="container-md">
@@ -10,7 +9,7 @@ Use this design system to make your service consistent with GOV.CY. Avoid repeat
         <div class="col-md-4">
             <h2>Styles</h2>
                 <p>A visual styles to make your service look like GOV.CY with of colours, images, layouts, grid system, spacing and typography. </p>
-                <p><a href="#p/styles">Browse styles</a></p>
+                <p><a href="#p/v1/styles">Browse styles</a></p>
         </div>
     <div class="col-md-4">
         <h2>Components</h2>
